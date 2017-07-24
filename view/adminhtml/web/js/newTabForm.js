@@ -15,7 +15,7 @@ define([
         };
 
         var generateInputs = function(name, data, form) {
-            if (data !== null && data !== undefined) {
+            if (data !== null && data !== undefined && typeof data !== "function") {
                 if (typeof data === 'object') {
                     for (var key in data) {
                         if (!data.hasOwnProperty(key)) {
