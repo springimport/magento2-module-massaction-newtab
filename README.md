@@ -12,19 +12,10 @@ Allow open mass actions in new tabs.
 
 ## Installation
 
-Enable module:
 ```bash
-php -f bin/magento module:enable SpringImport_MassActionNewTab
-```
-
-Disable module:
-```bash
-php -f bin/magento module:disable SpringImport_MassActionNewTab
-```
-
-Update system:
-```bash
-php -f bin/magento setup:upgrade
+composer require springimport/magento2-module-massaction-newtab
+php bin/magento module:enable SpringImport_MassActionNewTab
+php bin/magento setup:upgrade
 ```
 
 ## Usage
