@@ -1,24 +1,28 @@
-# Mass Action new tab
+# Mass Action New Tab for Magento 2
+
 Allow open mass actions in new tabs.
 
-# Install
+## Installation
+
 Enable module:
-```
+```bash
 php -f bin/magento module:enable SpringImport_MassActionNewTab
 ```
 
 Disable module:
-```
+```bash
 php -f bin/magento module:disable SpringImport_MassActionNewTab
 ```
 
 Update system:
-```
+```bash
 php -f bin/magento setup:upgrade
 ```
 
-# Using
+## Usage
+
 For setup action, create `Vendor/Module/view/adminhtml/ui_component/sales_order_grid.xml` and set `inNewTab` to `true`.
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="urn:magento:framework:Ui/etc/ui_configuration.xsd">
